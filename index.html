@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Responsive Portfolio Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="banner" id="sec">
+        <header>
+            <a href="#" class="logo">Logo</a>
+            <div id="toggle" onclick="toggle()"></div>
+        </header>
+        <div class="content">
+            <h2>Hello World,<br>I'm <span>Ferdous Mahmud</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem sequi dignissimos officiis, magni, blanditiis numquam voluptate necessitatibus eveniet neque fuga fugit! Quaerat odit ipsam rerum eum cupiditate possimus deserunt vero.At consectetur lorem donec massa sapien faucibus. Velit dignissim sodales ut eu sem integer vitae.</p>
+            <a href="#">Know More</a>
+        </div>
+        <ul class="sic">
+            <li><a href="#"><img src="facebook.png" alt="facebook"></a></li>
+            <li><a href="#"><img src="twitter.png" alt="twitter"></a></li>
+            <li><a href="#"><img src="linkedin.png" alt="linkedin"></a></li>
+        </ul>
+    </section>
+    <div id="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+        function toggle(){
+            var sec = document.getElementById('sec');
+            var nav = document.getElementById('navigation');
+            sec.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
